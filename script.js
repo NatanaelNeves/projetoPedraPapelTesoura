@@ -4,13 +4,17 @@ const opcoes={
     3: {nome:'Tesoura', img:'imagens/tesoura.png', pedra: 'DERROTA', papel: 'VITÓRIA', tesoura: 'EMPATE'}
 }
 
-function jogar(escolha){
-    let escolhaComputador = Math.floor(Math.random() * 3) + 1;
-    let resultado = opcoes[escolha].nome + ' vs ' + opcoes[escolhaComputador].nome + ': ';
-    resultado += opcoes[escolha][opcoes[escolhaComputador].nome.toLowerCase()];
-    document.getElementById('resultado').innerHTML = resultado;
-    document.getElementById('imagem-jogador').src = opcoes[escolha].img;
-    document.getElementById('imagem-computador').src = opcoes[escolhaComputador].img;
+let escolhaJogador= {}
+let escolhaComputador= {}
+
+function escolherJogada(num){
+    return opcoes[num]
 }
+
+let numComp = Math.floor(Math.random()*3)+1
+escolhaComputador= opcoes[numComp]
+
+
+
 
 
