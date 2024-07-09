@@ -75,17 +75,17 @@ button img {
     font-size: 24px;
 }
 
-.perdeu{
+.derrota{
     background-color: #ffdde0;
     color: #d32f2f"
 }
 
-.empatou{
+.empate{
     background-color: #e5e5e5; 
     color: #808080
 }
 
-.ganhou{
+.vitoria{
     background-color: #cefdce;
     color: #689f38
 }
@@ -96,10 +96,11 @@ button img {
 }
 
 .imagensResultado div{
-    min-width: 50%; 
+    min-width: 50%;
     margin: 5px;
 }
 
 .imagensResultado img{
     width: 50px;
 }
+
